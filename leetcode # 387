@@ -1,0 +1,14 @@
+class Solution:
+    def fucias(self, s):
+
+        seen = set()
+
+        for char in s:
+            if char in seen:
+                return f"fucias detected {char}"
+            seen.add(char)
+        return None
+
+
+noob = Solution()
+print(noob.fucias("byebye"))
